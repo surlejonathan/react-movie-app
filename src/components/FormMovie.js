@@ -49,7 +49,7 @@ class FormMovie extends Component {
               />
             </div>
             <div className="form-data">
-              <label htmlFor="poster">Poster</label>
+              <label htmlFor="poster">Affiche</label>
               <input
                 type="text"
                 id="poster"
