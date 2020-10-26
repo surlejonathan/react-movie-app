@@ -7,13 +7,13 @@ class FormMovie extends Component {
     this.state = {
       title: "",
       poster: "",
-      comment: "",
+      comment: ""
     };
   }
 
   onChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     });
   };
 
@@ -28,6 +28,11 @@ class FormMovie extends Component {
         console.error(e);
         alert(`Erreur lors de l'ajout d'un film : ${e.message}`);
       });
+    this.setState({
+      title: "",
+      poster: "",
+      comment: ""
+    });
   };
 
   render() {
